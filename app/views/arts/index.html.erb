@@ -1,0 +1,41 @@
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="app/assets/stylesheets/application.css"> 
+
+<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="pp/assets/stylesheets/application.css">
+
+<p id="notice"><%= notice %></p>
+
+<h1>Collaborative Arts Museum</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><div class="Title"> Title </div></th> 
+      <th>Author</th>
+      <th>Date</th>
+      <th>Description</th>
+      <th>Photo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @arts.each do |art| %>
+      <tr>
+        <td><%= art.title %></td>
+        <td><%= art.author %></td>
+        <td><%= art.date %></td>
+        <td><%= art.description %></td>
+        <td><img src="<%= art.photo %>" width= 250px/></td>
+      <div>
+        <td><%= link_to 'Show', art %></td>
+        <td><%= link_to 'Edit', edit_art_path(art) %></td>
+        <td><%= link_to 'Destroy', art, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </div>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Art', new_art_path %>
