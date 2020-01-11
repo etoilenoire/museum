@@ -16,13 +16,13 @@
 
 @import "bootstrap" ;
 
-h1 { font-family: 'Libre Baskerville', serif;
+h1 {font-family: 'Roboto', sans-serif;
 	color: #333;
-	font-size: 50px;
-	margin-bottom: 50px;
-	box-sizing: 100px;
-	background-color: yellow;
-
+	font-size: 30px;
+    margin-bottom: 25px;
+	margin-top: 125px;
+	text-align: center;
+	letter-spacing: -3px;
 	}
 
 table { font-family: 'Libre Baskerville', serif;
@@ -37,8 +37,99 @@ div { font-family: 'Libre Baskerville', serif;
 	color: #333
 	}
 
+th {
+	margin-top: 500px
+}
 
-.Title {
+.title {
+	
+}
 
-	padding-right: 10px
+.navbar-brand {
+	font-family: 'Libre Baskerville', serif;
+	color: #333;
+	font-size: 50px;
+}
+
+nav {
+  overflow: hidden;
+  background-color: #dad2d8;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+
+
+  /* Links inside the navbar */
+  a {
+  	  display: block;
+	  
+	  text-align: left;
+	  float: left;
+	  text-decoration: none;
+  }
+
+	  /* Change background on mouse-over */
+  a:hover {
+	  background: #dad2d8;
+	  color: black;
+	  text-decoration: underline;
+	  
+  }
+}
+
+
+/* Main content */
+.main {
+  margin-top: 15px; /* Add a top margin to avoid content overlay */
+}
+
+.home {
+
+	font-family: 'Libre Baskerville', serif;
+	color: #333;
+	font-size: 50px;
+	margin-left: 20px;
+}
+
+
+.items {
+	margin-top: 37px;
+	margin-left: 650px;
+	margin-right: 50px;
+	padding-right: 52px;
+	font-size: 15px;
+	font-family: 'Lato', sans-serif;
+}
+
+.item1 {
+	font-family: 'Lato', sans-serif;
+	padding-right: 25px;
+}
+
+.item2 {
+	font-family: 'Lato', sans-serif;
+	padding-right: 25px;
+}
+
+.introtext {
+	margin-bottom: 75px;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: -1px;
+	margin-top: 75px; 
+	margin-left: 20px;
+	margin-bottom: 25px;
+}
+
+.virtualplace {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+hr {
+	width: 300px;
+	height: 1px;
+	background-color: black;
+
 }

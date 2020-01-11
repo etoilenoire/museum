@@ -1,15 +1,33 @@
-<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="app/assets/stylesheets/application.css"> 
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="app/assets/stylesheets/application.scss"> 
 
-<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="pp/assets/stylesheets/application.css">
+<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="app/assets/stylesheets/application.scss">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="app/assets/stylesheets/application.scss">
 
 <p id="notice"><%= notice %></p>
 
-<h1>Collaborative Arts Museum</h1>
+
+
+ <nav>
+  <a href="#home"><div class="home">Collaborative Museum.</div></a>
+  <div class="items">
+    <a href="#news"><div class="item1">ARTISTS</div></a>
+    <a href="#contact"><div class="item2">ARTISTIC CURRENT</div></a>
+  </div>
+</nav>
+
+<h1>Welcome to the collaborative museum!</h1>
+
+<hr>
+
+<p><div class="introtext">Here you can find a simple virtual museum where you can add the artworks of your choice (title, author, date, description, and the image url.)</div></p>
+
+<%= image_tag "virtualplace.jpg", class:"virtualplace" %>
 
 <table>
   <thead>
     <tr>
-      <th><div class="Title"> Title </div></th> 
+      <th><div class="title"> Title </div></th> 
       <th>Author</th>
       <th>Date</th>
       <th>Description</th>
